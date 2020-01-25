@@ -7,9 +7,9 @@ module.exports = {
     node: true,
   },
   settings: {
-    "import/resolver": {
+    'import/resolver': {
       // use <root>/tsconfig.json
-      "typescript": {},
+      typescript: {},
     },
   },
   rules: {
@@ -33,6 +33,16 @@ module.exports = {
       },
     ],
     'import/no-named-as-default': 'off',
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        js: 'never',
+        jsx: 'never',
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
     'react/no-array-index-key': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',

@@ -15,6 +15,11 @@
     "serve": "serve dist -p 3000 -s",
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx src"
   },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn lint"
+    }
+  },
   "dependencies": {
     "@emotion/core": "^10.0.27",
     "@reach/router": "^1.2.1",
@@ -52,6 +57,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.6.1",
+    "husky": "^4.2.1",
     "prettier": "^1.19.1",
     "react-hot-loader": "^4.12.11",
     "serve": "^11.1.0",
