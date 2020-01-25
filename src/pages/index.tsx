@@ -69,7 +69,14 @@ const Page: React.FC = () => (
     <h1 css={header}>Kristen Mills</h1>
     <p css={subhead}>Software Engineer</p>
     <div css={items}>
-      <a css={link} href="https://github.com/kristenmills" title="Github" aria-label="Github">
+      <a
+        css={link}
+        href="https://github.com/kristenmills"
+        title="Github"
+        aria-label="Github"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <Icon css={icon} path={mdiGithubCircle} aria-hidden size="3.2rem" />
       </a>
       <a
@@ -77,13 +84,29 @@ const Page: React.FC = () => (
         href="https://www.linkedin.com/in/millsk91"
         title="LinkedIn"
         aria-label="LinkedIn"
+        target="_blank"
+        rel="noreferrer noopener"
       >
         <Icon css={icon} path={mdiLinkedinBox} aria-hidden size="3.2rem" />
       </a>
-      <a css={link} href="mailto:kristen@knm.dev" title="email" aria-label="Email">
+      <a
+        css={link}
+        href="mailto:kristen@knm.dev"
+        title="email"
+        aria-label="Email"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <Icon css={icon} path={mdiEmail} aria-hidden size="3.2rem" />
       </a>
-      <a css={link} href="resume.pdf" title="Resume" aria-label="Resume">
+      <a
+        css={link}
+        href="resume.pdf"
+        title="Resume"
+        aria-label="Resume"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
         <Icon css={icon} path={mdiFileAccount} aria-hidden size="3.2rem" />
       </a>
     </div>
