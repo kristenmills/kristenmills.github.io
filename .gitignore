@@ -33,4 +33,4 @@ node_modules/
 # React static
 dist/
 artifacts/
-tmp
+tmp/
