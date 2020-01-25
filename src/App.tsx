@@ -2,7 +2,6 @@ import * as React from 'react';
 import { css, Global } from '@emotion/core';
 
 import { Root, Routes } from 'react-static';
-// import globals from 'styles/globals';
 
 const wrapper = css`
   width: 100%;
