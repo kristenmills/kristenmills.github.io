@@ -39,13 +39,12 @@ const items = css`
   justify-content: center;
 `;
 
+const icon = css`
+  fill: currentColor;
+`;
+
 const link = css`
   color: #83afe5;
-  margin-right: 16px;
-
-  &:last-child {
-    margin-right: 0;
-  }
 
   transition: color 225ms ease-in-out;
 
@@ -54,8 +53,13 @@ const link = css`
   }
 `;
 
-const icon = css`
-  fill: currentColor;
+const linkIcon = css`
+  ${link};
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 `;
 
 const Page: React.FC = () => (
@@ -67,10 +71,15 @@ const Page: React.FC = () => (
       aria-hidden
     />
     <h1 css={header}>Kristen Mills</h1>
-    <p css={subhead}>Software Engineer</p>
+    <p css={subhead}>
+      Senior Software Engineer @{' '}
+      <a css={link} href="https://cue.app" target="_blank" rel="noreferrer noopener">
+        Cue
+      </a>
+    </p>
     <div css={items}>
       <a
-        css={link}
+        css={linkIcon}
         href="https://github.com/kristenmills"
         title="Github"
         aria-label="Github"
@@ -80,7 +89,7 @@ const Page: React.FC = () => (
         <Icon css={icon} path={mdiGithubCircle} aria-hidden size="3.2rem" />
       </a>
       <a
-        css={link}
+        css={linkIcon}
         href="https://www.linkedin.com/in/millsk91"
         title="LinkedIn"
         aria-label="LinkedIn"
@@ -90,7 +99,7 @@ const Page: React.FC = () => (
         <Icon css={icon} path={mdiLinkedinBox} aria-hidden size="3.2rem" />
       </a>
       <a
-        css={link}
+        css={linkIcon}
         href="mailto:kristen@knm.dev"
         title="email"
         aria-label="Email"
@@ -100,7 +109,7 @@ const Page: React.FC = () => (
         <Icon css={icon} path={mdiEmail} aria-hidden size="3.2rem" />
       </a>
       <a
-        css={link}
+        css={linkIcon}
         href="resume.pdf"
         title="Resume"
         aria-label="Resume"
