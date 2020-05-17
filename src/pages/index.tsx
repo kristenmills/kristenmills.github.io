@@ -72,10 +72,7 @@ const Page: React.FC = () => (
     />
     <h1 css={header}>Kristen Mills</h1>
     <p css={subhead}>
-      Senior Software Engineer @{' '}
-      <a css={link} href="https://cue.app" target="_blank" rel="noreferrer noopener">
-        Cue
-      </a>
+      Senior Software Engineer
     </p>
     <div css={items}>
       <a
