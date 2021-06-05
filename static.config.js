@@ -23,7 +23,7 @@ export default {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Kristen Mills</title>
         <link
-          href="https://fonts.googleapis.com/css?family=Work+Sans:300,700&display=swap"
+          href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700&display=swap"
           rel="stylesheet"
         />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />

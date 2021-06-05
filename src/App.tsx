@@ -25,10 +25,14 @@ const globals = css`
   body {
     font-size: 1.6rem;
     font-family: 'Work Sans', sans-serif;
-    color: #899ba6;
+    color: #556873;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @media (prefers-color-scheme: dark) {
+      color: #c5d4dd;
+      background-color: #3c4c55;
+    }
   }
 
   a {

@@ -19,9 +19,10 @@ const header = css`
 
 const subhead = css`
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0;
   margin-bottom: 20px;
+  letter-spacing: -0.6px;
 `;
 
 const container = css`
@@ -50,6 +51,13 @@ const link = css`
 
   &:hover {
     color: ${shade(0.15, '#83afe5')};
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #7fc1ca;
+    &:hover {
+      color: ${shade(0.15, '#7FC1CA')};
+    }
   }
 `;
 
