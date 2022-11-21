@@ -80,9 +80,9 @@ const Page: React.FC = () => (
     />
     <h1 css={header}>Kristen Mills</h1>
     <p css={subhead}>
-      Backend Engineer @{' '}
-      <a css={link} href="https://superhuman.com" target="_blank" rel="noreferrer noopener">
-        Superhuman
+      Software Engineer @{' '}
+      <a css={link} href="https://found.com" target="_blank" rel="noreferrer noopener">
+        Found
       </a>
     </p>
     <div css={items}>
