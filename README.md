@@ -1,3 +1,3 @@
 # Personal Site
 
-[knm,dev](https://knm.dev)
+[knm.dev](https://knm.dev)
